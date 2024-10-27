@@ -2,18 +2,18 @@
 name = "uniswapx-client-rs"
 version = "0.1.0"
 edition = "2021"
-rust-version = "1.80.0"
+license = "Apache-2.0"
 
 
 [dependencies]
-tracing = "0.1"
-thiserror = "1.0"
-reqwest = { version = "0.12", default-features = false, features = [
+tracing = "0.1.40"
+thiserror = "1.0.65"
+reqwest = { version = "0.12.8", default-features = false, features = [
     "rustls-tls", "json"
 ] }
-serde = {  version = "1.0", features = ["derive"] }
-serde_json = "1.0"
-serde_url_params = "0.2"
-derive_builder = "0.20"
-tokio = { version = "1", features = ["rt", "rt-multi-thread", "macros"] }
-alloy-primitives = { version = "0.8", features = ["serde"] }
+serde = {  version = "1.0.213", features = ["derive"] }
+serde_json = "1.0.132"
+serde_url_params = "0.2.1"
+derive_builder = "0.20.2"
+tokio = { version = "1.41.0", features = ["rt", "rt-multi-thread", "macros"] }
+alloy-primitives = { version = "0.8.9", features = ["serde"] }
