@@ -15,7 +15,7 @@ async fn main() {
         }
     };
 
-    if let Some(order) = result.orders.get(0) {
+    if let Some(order) = result.orders.first() {
         println!("{:#?}", order);
     } else {
         println!("No orders found");

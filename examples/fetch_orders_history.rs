@@ -42,7 +42,7 @@ async fn main() {
         for mut order in order_response.orders {
             // normalize timestamps. Not all timestamps are in seconds
             if order.created_at > 9999999999u64 {
-                order.created_at = order.created_at / 1000;
+                order.created_at /= 1000;
             }
             // Implement your own logic here
         }
